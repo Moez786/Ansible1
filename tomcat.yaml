@@ -16,3 +16,7 @@
         home: /opt/tomcat
         shell: /bin/false
         state: present
+    - name: create tomcat group
+      ansible.builtin.group:
+        name: tomcat
+        state: present
